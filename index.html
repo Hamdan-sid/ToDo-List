@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        h1{color: brown;}
+        input{color: white; background: #000;}
+        span{color: aqua; background: #000;}
+        button{color: #000; background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <h1>ToDo-List</h1>
+    <input type="text" id="userToDo">
+    <br>
+    <button onclick="add()">Add</button>
+    <span id="listToDo"> 
+        <br>
+    </span>
+    <script>
+        const add = () =>{
+          let input = document.getElementById("userToDo").value ;
+          let addItem =  document.getElementById("listToDo");
+
+          addItem.innerText += `${input}` + "\n"
+        }
+    </script>       
+</body>
+</html>
